@@ -1,0 +1,13 @@
+{
+  "kind": "intent",
+  "intent_type": "create_task",
+  "natural_language": "Follow up with John next week about the loft.",
+  "fields": {
+    "title": "Follow up with John",
+    "project": "Sagitta loft",
+    "due": "next monday"
+  },
+  "confidence": 0.82,
+  "source": "chat",
+  "timestamp": "2026-01-19T20:00:00Z"
+}

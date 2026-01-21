@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntentResponse",
+  "type": "object",
+  "required": ["status", "intent_id", "correlation_id"],
+  "properties": {
+    "status": { "type": "string", "enum": ["ready", "needs_clarification", "rejected", "accepted"] },
+    "intent_id": { "type": "string" },
+    "correlation_id": { "type": "string" },
+    "plan": { "$ref": "plan.schema.json" },
+    "clarification": { "$ref": "clarification.schema.json" },
+    "error_code": { "type": "string" },
+    "message": { "type": "string" },
+    "details": { "type": "object", "additionalProperties": true },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "details": { "type": "object", "additionalProperties": true }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

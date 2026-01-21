@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Clarification",
+  "type": "object",
+  "required": [
+    "clarification_id",
+    "intent_id",
+    "question",
+    "expected_answer_type",
+    "candidates",
+    "status"
+  ],
+  "properties": {
+    "clarification_id": { "type": "string" },
+    "intent_id": { "type": "string" },
+    "question": { "type": "string" },
+    "expected_answer_type": {
+      "type": "string",
+      "enum": ["choice", "free_text", "date", "datetime"]
+    },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "meta": { "type": "object", "additionalProperties": true }
+        },
+        "additionalProperties": true
+      }
+    },
+    "status": { "type": "string", "enum": ["open", "answered", "expired"] },
+    "answer": { "type": "object", "additionalProperties": true },
+    "answered_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

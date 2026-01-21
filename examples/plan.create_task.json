@@ -1,0 +1,16 @@
+{
+  "actions": [
+    {
+      "step_id": "step_1",
+      "kind": "action",
+      "action": "notion.tasks.create",
+      "intent_id": "int_01HX0V0E8V2J8J0N5B8Q1A7W3E",
+      "correlation_id": "cor_01HX0V0E8V2J8J0N5B8Q1A7W3E",
+      "payload": {
+        "title": "Follow up with John",
+        "project_id": "proj_1",
+        "due": "2026-01-26"
+      }
+    }
+  ]
+}

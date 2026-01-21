@@ -1,0 +1,11 @@
+{
+  "clarification_id": "clar_01HX0V0E8V2J8J0N5B8Q1A7W3E",
+  "intent_id": "int_01HX0V0E8V2J8J0N5B8Q1A7W3E",
+  "question": "Which project matches 'Sagitta'?",
+  "expected_answer_type": "choice",
+  "candidates": [
+    { "id": "proj_1", "label": "Sagitta - Loft" },
+    { "id": "proj_2", "label": "Sagitta - Flooring" }
+  ],
+  "status": "open"
+}

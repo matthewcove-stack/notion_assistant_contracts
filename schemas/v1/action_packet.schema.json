@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ActionPacket",
+  "type": "object",
+  "required": ["kind"],
+  "properties": {
+    "kind": { "const": "action" },
+    "action": { "type": "string" },
+    "intent_id": { "type": "string" },
+    "correlation_id": { "type": "string" },
+    "idempotency_key": { "type": "string" },
+    "fields": { "type": "object", "additionalProperties": true },
+    "payload": { "type": "object", "additionalProperties": true }
+  },
+  "additionalProperties": true
+}
