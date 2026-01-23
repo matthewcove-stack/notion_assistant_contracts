@@ -8,7 +8,7 @@
       "correlation_id": "cor_01HX0V0E8V2J8J0N5B8Q1A7W3E",
       "payload": {
         "title": "Follow up with John",
-        "project_id": "proj_1",
+        "project": "Sagitta - Loft",
         "due": "2026-01-26"
       }
     }

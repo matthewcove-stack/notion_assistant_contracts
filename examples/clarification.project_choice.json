@@ -4,8 +4,8 @@
   "question": "Which project matches 'Sagitta'?",
   "expected_answer_type": "choice",
   "candidates": [
-    { "id": "proj_1", "label": "Sagitta - Loft" },
-    { "id": "proj_2", "label": "Sagitta - Flooring" }
+    { "id": "Sagitta - Loft", "label": "Sagitta - Loft", "meta": { "project_id": "proj_1" } },
+    { "id": "Sagitta - Flooring", "label": "Sagitta - Flooring", "meta": { "project_id": "proj_2" } }
   ],
   "status": "open"
 }
