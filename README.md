@@ -5,3 +5,9 @@ Versioned JSON Schemas shared across the intent normaliser, context API, and Not
 - Schemas are under `schemas/v1/`.
 - Examples are under `examples/`.
 - The `VERSION` file is the contract version tag expected by services.
+
+## Validation
+
+```bash
+python scripts/validate_schemas.py
+```
