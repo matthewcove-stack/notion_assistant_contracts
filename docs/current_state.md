@@ -11,6 +11,7 @@ For Phase 1, the following must be stable and used everywhere:
 - Intent packet shape(s) for task creation/update
 - Action plan representation (if used)
 - Gateway request/response payload shapes for tasks create/update
+- Intent response status values, including `executed` and `failed` when actions run
 
 If Phase 1 requires changes:
 - Introduce a new schema revision under `schemas/v1/` (or bump to v2 if breaking)

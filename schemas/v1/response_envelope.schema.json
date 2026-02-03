@@ -4,7 +4,7 @@
   "type": "object",
   "required": ["status", "intent_id", "correlation_id"],
   "properties": {
-    "status": { "type": "string", "enum": ["ready", "needs_clarification", "rejected", "accepted"] },
+    "status": { "type": "string", "enum": ["ready", "needs_clarification", "rejected", "accepted", "executed", "failed"] },
     "intent_id": { "type": "string" },
     "correlation_id": { "type": "string" },
     "plan": { "$ref": "plan.schema.json" },
