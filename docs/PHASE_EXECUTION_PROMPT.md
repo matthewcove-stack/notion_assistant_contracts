@@ -1,12 +1,19 @@
-# Phase Execution Prompt — notion_assistant_contracts
+# Phase Execution Prompt (Canonical)
 
-Implement only the requested phase.
+You are implementing the requested phase ONLY.
 
-Phase 1 focus:
-- Ensure minimal schemas exist and match real payloads for the vertical slice.
-- Update examples and bump VERSION when required.
+Rules:
+- Do not implement future phases.
+- Do not refactor unrelated code.
+- Follow docs/intent.md.
+- Update docs/current_state.md after changes.
+- Use the smallest safe assumptions; document them.
+- If verification fails twice, stop and report.
 
-Run:
-- `python scripts/validate_schemas.py`
+## Mandatory enforcement (Drift Guard MCP)
+Before claiming completion, call these MCP tools and ensure ok=true:
+- repo_contract_validate()
+- verify_run(profile="default")
+- drift_check()
 
-Update `docs/current_state.md` on completion.
+Include the returned JSON in your final phase report.
